@@ -9,10 +9,11 @@ int main (){
 	source.open("cheerbook.txt") ;
 	dest.open("cheerbook_copy.txt");
 	string cheerbook;
+	dest << "-------------------- BOOM ---------------------\n";
 	while(getline(source,cheerbook)){
-		cout << cheerbook << "\n";
+		dest << cheerbook << "\n";
 	}
-
+	dest << "-------------------- HA!! ---------------------";
     source.close();
     dest.close();
 	return 0;
